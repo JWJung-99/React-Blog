@@ -1,6 +1,8 @@
 import { ThemeProvider } from '@emotion/react';
 import { darkTheme, lightTheme } from './styles/Theme';
 import { useState } from 'react';
+import { RouterProvider } from 'react-router-dom';
+import router from './routes.tsx';
 
 const App = () => {
   const [darkMode, setDarkMode] = useState(false);
@@ -9,7 +11,7 @@ const App = () => {
 
   return (
     <ThemeProvider theme={darkMode ? darkTheme : lightTheme}>
-      <h1>React Blog</h1>
+      <RouterProvider router={router} />
     </ThemeProvider>
   );
 };

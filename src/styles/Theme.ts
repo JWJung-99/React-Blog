@@ -33,6 +33,15 @@ export interface ITheme {
   typography: ITypography;
 }
 
+const typography: ITypography = {
+  titleLgEm: '500 2.2rem/2.8rem',
+  titleMdEm: '600 1.6rem/2.4rem',
+  bodyLgEm: '600 1.4rem/2rem',
+  bodyMdEm: '500 1.4rem/2rem',
+  bodySm: '500 1.1rem/1.6rem',
+  bodyXs: '500 0.8rem/1.2rem',
+};
+
 export const lightTheme: ITheme = {
   colors: {
     white: '#ffffff',
@@ -54,14 +63,7 @@ export const lightTheme: ITheme = {
     logoDark: '#323232',
     logoLight: '#d4d4d4',
   },
-  typography: {
-    titleLgEm: '500 2.2rem/2.8rem',
-    titleMdEm: '600 1.6rem/2.4rem',
-    bodyLgEm: '600 1.4rem/2rem',
-    bodyMdEm: '500 1.4rem/2rem',
-    bodySm: '500 1.1rem/1.6rem',
-    bodyXs: '500 0.8rem/1.2rem',
-  },
+  typography,
 };
 
 export const darkTheme: ITheme = {
@@ -85,12 +87,5 @@ export const darkTheme: ITheme = {
     logoDark: '#323232',
     logoLight: '#d4d4d4',
   },
-  typography: {
-    titleLgEm: '500 2.2rem/2.8rem',
-    titleMdEm: '600 1.6rem/2.4rem',
-    bodyLgEm: '600 1.4rem/2rem',
-    bodyMdEm: '500 1.4rem/2rem',
-    bodySm: '500 1.1rem/1.6rem',
-    bodyXs: '500 0.8rem/1.2rem',
-  },
+  typography,
 };

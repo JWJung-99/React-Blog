@@ -135,6 +135,10 @@ const globalStyle = css`
     border-spacing: 0;
   }
 
+  body {
+    height: 100svh;
+  }
+
   /* input, select, textarea style */
   select,
   input,
@@ -219,6 +223,14 @@ const globalStyle = css`
   --transition-duration: 0.3s;
   --box-shadow: 0 0.1rem 0.2rem rgba(0, 0, 0, 0.25);
   --background-dim: rgba(0, 0, 0, 0.5);
+
+  .hidden {
+    position: absolute !important;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip: rect(1px 1px 1px 1px);
+  }
 `;
 
 const GlobalStyle = () => <Global styles={globalStyle} />;

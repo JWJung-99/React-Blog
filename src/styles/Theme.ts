@@ -28,9 +28,15 @@ interface ITypography {
   bodyXs: string;
 }
 
+interface IPadding {
+  paddingSm: string;
+  paddingLg: string;
+}
+
 export interface ITheme {
   colors: IColor;
   typography: ITypography;
+  padding: IPadding;
 }
 
 const typography: ITypography = {
@@ -40,6 +46,11 @@ const typography: ITypography = {
   bodyMdEm: '500 1.4rem/2rem',
   bodySm: '500 1.1rem/1.6rem',
   bodyXs: '500 0.8rem/1.2rem',
+};
+
+const padding: IPadding = {
+  paddingSm: '1.6rem',
+  paddingLg: '2.4rem',
 };
 
 export const lightTheme: ITheme = {
@@ -64,6 +75,7 @@ export const lightTheme: ITheme = {
     logoLight: '#d4d4d4',
   },
   typography,
+  padding,
 };
 
 export const darkTheme: ITheme = {
@@ -88,4 +100,5 @@ export const darkTheme: ITheme = {
     logoLight: '#d4d4d4',
   },
   typography,
+  padding,
 };
